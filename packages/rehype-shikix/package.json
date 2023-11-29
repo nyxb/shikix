@@ -32,7 +32,7 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "prepublishOnly": "nr build"
+    "prepublishOnly": "nyxr build"
   },
   "dependencies": {
     "@types/hast": "^3.0.3",
