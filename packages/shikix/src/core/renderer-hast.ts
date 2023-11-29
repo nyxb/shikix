@@ -1,5 +1,5 @@
 import type { Element, Root, Text } from 'hast'
-import type { CodeToHastOptions, HtmlRendererOptions, ShikiContext, ThemedToken, shikixTransformerContext } from '../types'
+import type { CodeToHastOptions, HtmlRendererOptions, ShikiContext, ShikixTransformerContext, ThemedToken } from '../types'
 import { codeToThemedTokens } from './tokenizer'
 import { FontStyle } from './stackElementMetadata'
 import { codeToTokensWithThemes } from './renderer-html-themes'
@@ -151,7 +151,7 @@ export function tokensToHast(
       children: lines,
    }
 
-   const context: shikixTransformerContext = {
+   const context: ShikixTransformerContext = {
       get tokens() {
          return tokens
       },
