@@ -1,0 +1,49 @@
+{
+  "name": "rehype-shikix",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "rehype integration for shikix",
+  "author": "Dennis Ollhoff <contact@nyxb.email>",
+  "license": "MIT",
+  "homepage": "https://github.com/nyxb/shikix#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/shikix.git",
+    "directory": "packages/rethype-shikix"
+  },
+  "bugs": "https://github.com/nyxb/shikix/issues",
+  "keywords": [
+    "shiki",
+    "rehype"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@types/hast": "^3.0.3",
+    "hast-util-to-string": "^3.0.0",
+    "shikix": "workspace:*",
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0"
+  }
+}

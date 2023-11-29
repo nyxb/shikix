@@ -1,0 +1,40 @@
+{
+  "name": "shikix-transformers",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Collective of common transformers transformers for Shikix",
+  "author": "Dennis Ollhoff <contact@nyxb.email>",
+  "license": "MIT",
+  "homepage": "https://github.com/nyxb/shikix#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/shikix.git",
+    "directory": "packages/shikix"
+  },
+  "bugs": "https://github.com/nyxb/shikix/issues",
+  "keywords": [
+    "shiki",
+    "shikix-transformers"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "shikix": "workspace:*"
+  }
+}
