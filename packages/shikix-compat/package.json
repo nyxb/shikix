@@ -1,0 +1,43 @@
+{
+  "name": "shikix-compat",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "Shikix with shiki compatible API",
+  "author": "Dennis Ollhoff <contact@nyxb.email>",
+  "license": "MIT",
+  "homepage": "https://github.com/nyxb/shikix#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyxb/shikix.git",
+    "directory": "packages/shikix-compat"
+  },
+  "bugs": "https://github.com/nyxb/shikix/issues",
+  "keywords": [
+    "shiki",
+    "rehype"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "require": "./index.cjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist",
+    "index.cjs"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "shikix": "workspace:*",
+    "shikix-transformers": "workspace:*"
+  }
+}
