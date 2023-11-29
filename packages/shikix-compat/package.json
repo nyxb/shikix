@@ -34,7 +34,7 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
-    "prepublishOnly": "nr build"
+    "prepublishOnly": "nyxr build"
   },
   "dependencies": {
     "shikix": "workspace:*",

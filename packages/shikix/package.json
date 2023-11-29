@@ -70,7 +70,7 @@
     "prepare": "esno scripts/prepare.ts",
     "build": "rimraf dist && rollup -c",
     "dev": "rollup -cw",
-    "prepublishOnly": "nr build",
+    "prepublishOnly": "nyxr build",
     "test": "vitest",
     "test:cf": "wrangler dev test/cf.ts --port 60001"
   },
