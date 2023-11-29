@@ -11,3 +11,4 @@ node_modules
 temp
 packages/shikix/src/assets/langs
 packages/shikix/src/assets/*.json
+.env
