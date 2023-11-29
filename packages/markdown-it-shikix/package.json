@@ -1,7 +1,7 @@
 {
   "name": "markdown-it-shikix",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "markdown-it integration for shikix",
   "author": "Dennis Ollhoff <contact@nyxb.email>",
   "license": "MIT",
