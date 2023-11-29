@@ -482,7 +482,7 @@ const code = shiki.codeToHtml('const a = 1', { lang: 'mylang' })
 
 > We take this chance to make some breaking changes that we think are beneficial for the future. We'd suggest you try to migrate those changes if possible, as most of them should be straightforward. If you have very deep integration, you can try our compatibility build [`shikix-compat`](./packages/shikix-compat) which aligns with `shiki`'s current API.
 
-As of [`shiki@0.4.3`](https://github.com/shikijs/shiki/releases/tag/v0.14.3):
+As of [`shiki@0.0.3`](https://github.com/shikijs/shiki/releases/tag/v0.0.3):
 
 #### Hard Breaking Changes
 
@@ -508,7 +508,7 @@ Breaking changes applies to `shikix`, but are shimmed by [`shikix-compat`](./pac
 
 You can inspect the bundle size in detail on [pkg-size.dev/shikix](https://pkg-size.dev/shikix).
 
-As of `v0.5.0`, measured at 17th, August 2023:
+As of `v0.0.3`, measured at 29th, November 2023:
 
 | Bundle | Size (minified) | Size (gzip) | Notes |
 | --- | ---: | ---: | --- |
